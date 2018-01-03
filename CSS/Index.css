@@ -1,0 +1,28 @@
+
+h1 {
+    background-color: aqua;
+    color:deeppink;
+    font-family:verdana;
+    font-size:600%;
+}
+.tm-image{
+    display: inline-block;
+    float: right;
+
+    }
+
+.tm-image1{
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+
+    }
+.tm-container{
+   max-width:1200px;
+    margin:0 auto;
+
+}
+
+
+
+

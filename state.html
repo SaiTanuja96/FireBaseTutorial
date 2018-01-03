@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href = "../CSS/Index.css" >
+    <title> javascriptintroduction1</title>
+
+    <script type="text/javascript">
+
+    var tracker='c';
+        function change(){
+            var image=document.getElementById('social');
+            if(tracker=='c'){
+                image.src='Images/charminar.jpg';
+                tracker='g';
+            }
+            else{
+                image.src='Images/golkonda.jpg';
+                tracker='c';
+            }
+        }
+
+
+    var timer=setInterval('change()',5000);
+
+    </script>
+
+    </head>
+    <body>
+
+    <img src="Images/charminar.jpg" width="800px" id="social" onclick="clearInterval(timer);">
+
+
+    </body>
+</html>

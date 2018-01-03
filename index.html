@@ -3,18 +3,44 @@
 <head>
     <meta charset="utf-8"/>
     <title> java script introduction</title>
+      <body>
+        <header class="tm-header">
+         <div class="time-container">
     <h1 TELANGANA></h1>
-    <img src="Images/telsymbol.jpg"/>
-
-
-    </head>
-
+<section>
+    <img src="Images/telsymbol.jpg"class="tm-image"/>
+<img src="Images/kcr.jpg" class="tm-image1"/>
 
 
 
-    <body>
+    <script type="text/javascript">
+
+        function checkinfo(){
+            var username=document.getElementById('username').value;
+             var password=document.getElementById('password').value;
+            if(username=" "|| password=" "){
+                alert('enter the info');
+                return false;
+            }else{
+                return true;
+            }
+
+        }
 
 
+
+
+
+<form action="state.html" method="get" onsubmit="return_checkinfo()";>
+    username:<input type="text" name="username" id="username"/>
+      password:<input type="password" name="password" id="password"/>
+    <input type="submit" name="login"/>
+
+
+    </script>
+    </section>
+             </div>
+        </header>
     </body>
 
 
