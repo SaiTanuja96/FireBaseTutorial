@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
+     <link rel="stylesheet" href = "../CSS/Index.css" >
     <title> java script introduction</title>
       <body>
         <header class="tm-header">
-         <div class="time-container">
-    <h1 TELANGANA></h1>
+         <div class="tm-container">
+    <h1> TELANGANA</h1>
 <section>
     <img src="Images/telsymbol.jpg"class="tm-image"/>
 <img src="Images/kcr.jpg" class="tm-image1"/>
@@ -19,32 +20,46 @@
             var username=document.getElementById('username').value;
              var password=document.getElementById('password').value;
             if(username=" "|| password=" "){
-                alert('enter the info');
+              window.alert("enter the info");
                 return false;
             }else{
                 return true;
             }
 
         }
-
-
-
-
+         </script>
 
 <form action="state.html" method="get" onsubmit="return_checkinfo()";>
     username:<input type="text" name="username" id="username"/>
       password:<input type="password" name="password" id="password"/>
-    <input type="submit" name="login"/>
-
-
-    </script>
-    </section>
+    <input type="submit" name="login" id="submitbtn" />
+    </form>
+ </section>
              </div>
         </header>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBv4oVtwU6MyAMpl61NiMaGST5coHUIcXM",
+    authDomain: "fir-web-learn-6a732.firebaseapp.com",
+    databaseURL: "https://fir-web-learn-6a732.firebaseio.com",
+    projectId: "fir-web-learn-6a732",
+    storageBucket: "fir-web-learn-6a732.appspot.com",
+    messagingSenderId: "794461947701"
+  };
+  firebase.initializeApp(config);
+</script>
+
+     <script src="index.js">
+          </script>
+
     </body>
 
 
 
 
-
+    </head>
 </html>
